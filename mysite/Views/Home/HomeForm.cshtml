@@ -1,0 +1,96 @@
+﻿@model HomeViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="d-flex" id="wrapper">
+        <partial name="_AdminNavbar" />
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <h2>Edit-Home-page</h2>
+            <!-- /#sidebar-wrapper -->
+            <div class="container">
+                @using (Html.BeginForm("Save", "Home", FormMethod.Post, new { id = "signupform" }))
+                {
+                    @Html.ValidationSummary(true, "Please fix the following errors.")
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Home.Title)
+                        @Html.TextBoxFor(m => m.Home.Title, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Home.Title)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Home.Name)
+                        @Html.TextBoxFor(m => m.Home.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Home.Name)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Home.Service)
+                        @Html.TextBoxFor(m => m.Home.Service, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Home.Service)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Home.Description)
+                        @Html.TextBoxFor(m => m.Home.Description, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Home.Description)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Home.Email)
+                        @Html.TextBoxFor(m => m.Home.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Home.Email)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Home.PhoneNumber)
+                        @Html.TextBoxFor(m => m.Home.PhoneNumber, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Home.PhoneNumber)
+                    </div>
+                    @Html.HiddenFor(m => m.Home.Id)
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-primary">Save</button>
+                }
+
+            </div>
+            
+        </div>
+    </div>
+@section scripts {
+    <script>
+        let submitForm = document.querySelector('#signupform');
+        submitForm.addEventListener('submit', submitData);
+
+        function submitData(e) {
+            e.preventDefault();
+            let title = document.getElementById("Home_Title").value; 
+            let name = document.getElementById("Home_Name").value;
+            let service = document.getElementById("Home_Service").value;
+            let description = document.getElementById("Home_Description").value;
+            let email = document.getElementById("Home_Email").value;
+            let phoneNumber = document.getElementById("Home_PhoneNumber").value;
+
+            fetch('/api/Home', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ title: title, name: name, service: service, description: description, email: email, phoneNumber: phoneNumber })
+            }).then((res) => res.json())
+                    .then((data) => {
+                        submitForm.reset();
+                        alert("You update the page")
+                    })
+                    .catch((error) => {
+                        console.log('Error', error);
+                    })
+          
+        }
+    </script>
+  
+}

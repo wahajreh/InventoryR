@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Graphical Icons/Blue/incline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Graphical-Icons/Blue/incline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-incline">
+            <g>
+                <rect id="bound" x="0" y="0" width="72" height="72"></rect>
+                <polyline id="Line-118" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="4.5 43.5 19.5 22.5 46.5 30 64.5 7.5"></polyline>
+                <polyline id="Line-119" stroke="#0077C8" stroke-width="3" stroke-linecap="round" points="52.923886 7.64995054 65.6738356 5.91673628 66.703126 17.693697"></polyline>
+                <path d="M58.5,24.9726562 C58.5,24.9726562 58.5,39.1484375 58.5,67.5" id="Line-116" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M49.5,35.9296875 L49.5,67.5" id="Line-116" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M40.5,34.7149658 L40.5,67.5" id="Line-116" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M31.5,32.3283691 L31.5,67.5" id="Line-116-Copy" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M22.5,29.8267822 L22.5,67.5" id="Line-116-Copy-2" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M13.5,42.0340576 L13.5,67.5" id="Line-116-Copy-3" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

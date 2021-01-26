@@ -1,0 +1,77 @@
+﻿@model IEnumerable<mysite.Models.Customer>
+@{
+
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2> <i class="fa fa-users fa-2x"></i> Customers-In-@DateTime.Now.Year</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <table id="customers" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Work-Order</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Billing Address</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Zip Code</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <a class="btn btn-danger" asp-action="Login" asp-controller="Auth">Sign In</a> to assets Customer Lists!!!
+    </div>
+}
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            var table = $("#customers").DataTable({
+                ajax: {
+                    url: "/api/customers",
+                    dataSrc: ""
+                },
+                columns: [
+                    { data: "workOrder"},
+                    { data: "customerLast" },
+                    { data: "customerFirst" },
+                    { data: "email" },
+                    { data: "mobilPhone" },
+                    { data: "billingAddress" },
+                    { data: "city" },
+                    { data: "state" },
+                    { data: "postalCode" },
+                    {
+                        data: "Details",
+                        render: function (data, type, customer) {
+                            return "<a class='btn btn-success' href='/customers/details/" + customer.id + "'>Details</a>";
+                        }
+                    },
+
+                ]
+            });
+        });
+    </script>
+
+}

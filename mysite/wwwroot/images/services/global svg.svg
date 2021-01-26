@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Graphical Icons/Blue/global</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Graphical-Icons/Blue/global" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-global">
+            <g>
+                <rect id="bound" x="0" y="0" width="72" height="72"></rect>
+                <circle id="Oval-32" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="36" cy="36" r="34.5"></circle>
+                <path d="M5.33533796,51.3766854 C10.1851486,39.7863291 17.220461,30.2512873 26.4412751,22.7715599 C35.6620892,15.2918326 45.8643407,10.7465192 57.0480296,9.13561968" id="Line-103" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M28.7031108,2.31085499 C43.5293585,9.00576797 51.9235842,19.255162 53.8857879,33.0590371 C55.8479917,46.8629122 50.3860624,59.3432332 37.5,70.5" id="Line-104" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M2.55208216,30.0014821 C13.4022501,31.621441 23.3486568,34.9965791 32.3913023,40.1268963 C41.4339477,45.2572135 49.42872,52.7837479 56.3756191,62.7064994" id="Line-105" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval-33" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="16.7995605" cy="32.8769531" r="2.25"></circle>
+                <circle id="Oval-33-Copy" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="43.9746942" cy="12.4549031" r="2.25"></circle>
+                <circle id="Oval-33-Copy-2" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="50.2545297" cy="54.6411246" r="2.25"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

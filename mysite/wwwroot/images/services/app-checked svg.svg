@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Graphical Icons/Blue/app-checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Graphical-Icons/Blue/app-checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-app-checked">
+            <g>
+                <rect id="bound" x="0" y="0" width="72" height="72"></rect>
+                <path d="M27,55.5 L7.5,55.5 C4.1862915,55.5 1.5,52.8137085 1.5,49.5 L1.5,10.5 C1.5,7.1862915 4.1862915,4.5 7.5,4.5 L58.5,4.5 C61.8137085,4.5 64.5,7.1862915 64.5,10.5 L64.5,30" id="Rectangle-60" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.5,16.5 L64.5,16.5" id="Stroke-106" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.5,12 C9.672,12 9,11.328 9,10.5 C9,9.672 9.672,9 10.5,9 C11.328,9 12,9.672 12,10.5 C12,11.328 11.328,12 10.5,12 Z" id="Stroke-107" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19.5,12 C18.672,12 18,11.328 18,10.5 C18,9.672 18.672,9 19.5,9 C20.328,9 21,9.672 21,10.5 C21,11.328 20.328,12 19.5,12 Z" id="Stroke-108" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M28.5,12 C27.672,12 27,11.328 27,10.5 C27,9.672 27.672,9 28.5,9 C29.328,9 30,9.672 30,10.5 C30,11.328 29.328,12 28.5,12 Z" id="Stroke-109" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval-72" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="52.5" cy="52.5" r="18"></circle>
+                <polyline id="Stroke-278" stroke="#0077C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="61.5 46.5 49.5 58.5 43.5 52.5"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,201 @@
+﻿
+@{
+
+    ViewData["Title"] = "Tools Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body
+    #slider,
+    .wrap,
+    .slide-content {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .wrap {
+        position: relative;
+    }
+
+    .slide {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .slide1 {
+        background-image: url("https://static.pexels.com/photos/302889/pexels-photo-302889.jpeg");
+    }
+
+    .slide2 {
+        background-image: url("https://static.pexels.com/photos/302892/pexels-photo-302892.jpeg");
+    }
+
+    .slide3 {
+        background-image: url("https://static.pexels.com/photos/226633/pexels-photo-226633.jpeg");
+    }
+
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+        .slide-content span {
+            font-size: 5rem;
+            color: #fff;
+        }
+
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    #arrow-left {
+        border-width: 30px 40px 30px 0;
+        border-color: transparent #fff transparent transparent;
+        left: 0;
+        margin-left: 30px;
+    }
+
+    #arrow-right {
+        border-width: 30px 0 30px 40px;
+        border-color: transparent transparent transparent #fff;
+        right: 0;
+        margin-right: 30px;
+    }
+</style>
+
+
+<div class="wrap post-main-img">
+    <div id="arrow-left" class="arrow"></div>
+    <div id="slider">
+        <div class="slide slide1">
+            <div class="slide-content">
+                <span>Share Ideas!</span>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="slide-content">
+                <span>Passion!!</span>
+            </div>
+        </div>
+        <div class="slide slide3">
+            <div class="slide-content">
+                <span>Goals!!!</span>
+            </div>
+        </div>
+    </div>
+    <div id="arrow-right" class="arrow"></div>
+</div>
+
+<!-- Tools -->
+<section id="tools">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center">Best tools of @DateTime.Now.Year for Technician</h2>
+                <hr />
+            </div>
+        </div>
+        <div class="row box">
+            <div class="col-md-6 col-sm-6 col-xs-12 outside-container">
+                <img src="~/images/contact/keyboard.png" class="img-fluid"/>
+                <div class="overlay">
+                    <div class="text">Technician Contacts</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 shadow-lg bg-white rounded">
+                <h2 class="featurette-heading">
+                    Best place for Technician and Parts Contacts data
+                    <br><span class="text-muted">See for yourself. Oh yeah, it's that good.</span>
+                </h2>
+                <p>
+                    Calling out due to sick or other reasons:
+                    Please Text or call Rick or Heather only on the personal cell phones.
+                    Do Not wait till 8am or after. Call outs have to be reported between 7am-750am.
+                    Please wait to call out till then. You do not need to text or call at Midnight or 
+                    early morning. We love our sleep too, and nothing can be done till 7am anyways the next day.
+                </p>
+                <a class="btn btn-primary" href="/Home/UserPanel">Go to Control-Panel..</a>
+            </div>
+        </div>
+        <div class="row box">
+            <div class="col-md-6 col-sm-6 col-xs-12 outside-container">
+                <img src="~/images/contact/techsupport.png" class="img-fluid"/>
+                <div class="overlay">
+                    <div class="text">TechLine-Support</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 shadow-lg bg-white rounded">
+                <h2 class="featurette-heading">
+                    How Important is Tech Support to Your Growing Business?
+                    <br><span class="text-muted">See for yourself. Oh yeah, it's that good.</span>
+                </h2>
+                <p>
+                    A technical support team can resolve any issues you are having, complete some of the more tedious tasks that need to be done, 
+                    or can assist you on the projects. 
+                    This frees you up to work on the more important business projects and assisting other employees.
+                </p>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="UserPanel">Go to Control-Panel..</a>
+            </div>
+        </div>
+        <div class="row box">
+            <div class="col-md-6 col-sm-6 col-xs-12 outside-container">
+                <img src="~/images/contact/Invoices.jpg" class="img-fluid"/>
+                <div class="overlay">
+                    <div class="text">Invoices<br />2020</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 shadow-lg bg-white rounded">
+                <h2 class="featurette-heading">
+                    Why Are Invoices Important in a Business?
+                    <br><span class="text-muted">See for yourself. Oh yeah, it's that good.</span>
+                </h2>
+                <p>
+                    The most basic purpose for a sales invoice is to keep a record of the sale. 
+                    It provides a way to track the date a good was sold, how much money was paid and any outstanding debt. 
+                    The invoice is an invaluable tool for accounting. It can also track which employees make sales and the items they sell.
+                </p>
+                <a class="btn btn-primary" href="/Home/UserPanel">Go to Control-Panel....</a>
+            </div>
+        </div>
+        <div class="row box">
+            <div class="col-md-6 col-sm-6 col-xs-12 outside-container">
+                <img src="~/images/contact/img-news-hero.jpg" class="img-fluid"/>
+                <div class="overlay">
+                    <div class="text">Share the good news</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 shadow-lg bg-white rounded">
+                <h2 class="featurette-heading">
+                    Oh yeah, it's that good.
+                    <br><span class="text-muted">See for yourself.</span>
+                </h2>
+                <p>
+                    Sharing Good news shows that taking an intentional approach to sharing positive stories can help leaders boost employee morale.
+                    Follow the leader - Support active sharing of positive news
+                </p>
+                <a class="btn btn-primary" href="/Home/UserPanel">Go to Control-Panel....</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts{
+    <script src="~/lib/js/sliderimages.js"></script>
+}
+

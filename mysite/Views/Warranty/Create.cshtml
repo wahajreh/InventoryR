@@ -1,0 +1,53 @@
+﻿@model mysite.ViewModels.WarrantyViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex" id="wrapper">
+
+    <partial name="_AdminNavbar" />
+    <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>New Warranty Info</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <form asp-controller="Warranty" asp-action="Create" method="post" id="warrantyform" enctype="multipart/form-data">
+                            <input asp-for="Id" type="hidden" />
+                            <div class="form-group">
+                                <label>Company Name</label>
+                                <input class="form-control" asp-for="CompanyName" />
+                            </div>
+                            <div class="form-group">
+                                <label>Details</label>
+                                <textarea class="form-control" asp-for="Details">
+                        </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input class="form-control" asp-for="PhoneNumber" />
+                            </div>
+                            @Html.AntiForgeryToken()
+                            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+     </div>
+</div>
+
+

@@ -1,0 +1,29 @@
+﻿@{ ViewData["Title"] = "Demo Page"; }
+
+<!-- =========================== Thumbnail Gallery ========================================== -->
+<section id="thumbgallery" class="bg-dark">
+    <div class="text-center">
+        <h2 class='text-white font-weight-bold'>Lets get started with your next project</h2>
+        <h2 class="font-weight-bold">Better design</h2>
+        <p class="font-weight-bold">Take the complexity out of managing your business finances, inventory, sales, vendors, and projects.</p>
+        <a asp-area="" asp-controller="MyMessages" asp-action="New" class="btn btn-lg btn-rounded btn-primary">Send Message</a><br>
+    </div>
+    <div class="container">
+        <div class="main-img">
+            <img src="~/images/Demo/demo6.jpg" id="current"/>
+        </div>
+        <div class="imgs">
+            <img src="~/images/Demo/demo1.png" />
+            <img src="~/images/Demo/demo2.jpg" />
+            <img src="~/images/Demo/demo3.png" />
+            <img src="~/images/Demo/demo4.jpg" />
+            <img src="~/images/Demo/demo5.png" />
+            <img src="~/images/Demo/demo6.jpg" />
+            <img src="~/images/Demo/demo7.jpg" />
+            <img src="~/images/Demo/demo8.jpeg" />
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <script src="~/lib/js/gallery.js"></script>
+}

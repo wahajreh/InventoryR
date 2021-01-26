@@ -1,0 +1,53 @@
+﻿@model TruckViewModel
+@{ ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="d-flex" id="wrapper">
+
+    <partial name="_AdminNavbar" />
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="container-fluid">
+            <form asp-controller="Trucks" asp-action="Edit" method="post" enctype="multipart/form-data">
+                <input asp-for="Id" type="hidden" />
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" asp-for="Name" />
+                </div>
+                <div class="form-group">
+                    <label>Truck Number</label>
+                    <select class="form-control" asp-for="TruckNumber">
+                        <option value="truck47">Truck 47</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Details</label>
+                    <input class="form-control" asp-for="Details" />
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <input class="form-control" asp-for="Category" />
+                </div>
+                <div class="form-group">
+                    <label>Part Link</label>
+                    <input class="form-control" asp-for="Link" />
+                </div>
+                <div class="form-group">
+                    <label>truck Image</label>
+                    <input class="btn btn-primary" asp-for="CurrentImage" type="hidden" />
+                    <input class="btn btn-info" asp-for="TruckPhoto" />
+                </div>
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+</div>

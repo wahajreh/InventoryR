@@ -1,0 +1,373 @@
+﻿@model IEnumerable<HomeViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex" id="wrapper">
+    <partial name="_AdminNavbar" />
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <section id="banner" class="site-banner">
+            <!--
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 site-title">
+                <h1>Hey, I'm Martin.</h1>
+                <h2 class="lead">
+                    Web designer and developer from Orlando, Fl.
+                    I create custom websites to help businesses do better online.
+                </h2>
+                <p><a asp-controller="Home" asp-action="About" class="btn btn-primary btn-lg text-uppercase">Learn More About me...</a></p>
+                <p><a class="btn btn-primary btn-lg" asp-area="" asp-controller="Portfolio" asp-action="Index">Portfolio &raquo;</a></p>
+            </div>
+            <div class="col-lg-6 col-md-12 banner-image">
+                <img src="~/images/about-us.png" alt="About us" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+
+
+        -->
+
+        </section>
+        <hr />
+
+        <!--  ====================== Start Services Area =============================  -->
+
+        <section class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text">Services I Offer</h1>
+                        <p class="para">
+                            Start Today I can help you build better websites using the Bootstrap framework!
+                            I can start customizing, no strings attached!
+                        </p>
+                        <hr />
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="~/images/s1.png" alt="Services-1" class="img-responsive" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">.Net developer</h5>
+                                    <p class="card-text text-secondary">
+                                        My themes updated regularly to
+                                        keep them bug free!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="~/images/s2.png" alt="Services-2" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">ux/ui desing</h5>
+                                    <p class="card-text text-secondary">
+                                        All dependencies are kept current to
+                                        keep things fresh.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="~/images/s3.png" alt="Services-3" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">web design</h5>
+                                    <p class="card-text text-secondary">
+                                        You can use my design as is, or you can make changes!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="~/images/s4.png" alt="Services-4" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">seo optimize</h5>
+                                    <p class="card-text text-secondary">
+                                        I will increasing the quality and quantity of website traffic
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== Thumbnail Gallery ========================================== -->
+        <section id="thumbgallery" class="bg-dark">
+            <div class="text-center">
+                <h2 class='text-white font-weight-bold'>Lets get started with your next project</h2>
+                <h2 class="font-weight-bold">Better design</h2>
+                <p class="font-weight-bold">Better experiences.</p>
+                <a asp-area="" asp-controller="MyMessages" asp-action="New" class="btn btn-lg btn-rounded btn-primary">Send Message</a><br>
+            </div>
+            <div class="container">
+                <div class="main-img">
+                    <img src="~/images/img/img1.jpeg" id="current" />
+                </div>
+                <div class="imgs">
+                    <img src="~/images/img/img1.jpeg" />
+                    <img src="~/images/img/img2.jpeg" />
+                    <img src="~/images/img/img3.jpeg" />
+                    <img src="~/images/img/img4.jpeg" />
+                    <img src="~/images/img/img5.jpeg" />
+                    <img src="~/images/img/img6.jpeg" />
+                    <img src="~/images/img/img7.jpeg" />
+                    <img src="~/images/img/img8.jpeg" />
+                </div>
+            </div>
+        </section>
+
+        <!--  ======================== About Me Area ==============================  -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="about-title">
+                            <h1 class="text-uppercase title-h1">Client Say about me</h1>
+                            <p class="para">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
+                                recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container carousel py-lg-5">
+                <div class="owl-carousel owl-theme">
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="~/images/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="~/images/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="~/images/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="~/images/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="~/images/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="~/images/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--  ======================== End About Me Area ==============================  -->
+
+        <div class="bg-white">
+            <div class="container pt50 pb30">
+                <!-- Carousel -->
+                <div class="carousel-client owl-carousel owl-theme">
+                    <div class="item text-center">
+                        <img src="~/images/blog1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="item text-center">
+
+                        <img src="images/cl-2.png" alt="">
+                    </div>
+                    <div class="item text-center">
+                        <img src="~/images/cl-3.png" alt="">
+                    </div>
+                    <div class="item text-center">
+
+                        <img src="images/cl-4.png" alt="">
+                    </div>
+                    <div class="item text-center">
+
+                        <img src="images/cl-5.png" alt="">
+                    </div>
+                    <div class="item text-center">
+
+                        <img src="images/cl-1.png" alt="">
+                    </div>
+                    <div class="item text-center">
+
+                        <img src="images/cl-2.png" alt="">
+                    </div>
+                    <div class="item text-center">
+
+                        <img src="images/cl-3.png" alt="">
+                    </div>
+                </div> <!-- /Carousel -->
+            </div><!--/.clients-->
+        </div>
+
+
+        <!--  ========================== Subscribe me Area ============================  -->
+        <section class="subscribe-us-area">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-lg-12 text-center subscribe-title">
+                        <h4 class="text-uppercase">Get Update From anywhere</h4>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                            consequuntur.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <form class="w-50">
+                        <div class="row d-flex flex-row flex-wrap">
+                            <div class="col input-textbox">
+                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <div class="btn-submit">
+                                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--  ========================== End Subscribe me Area ============================  -->
+        <!--  ====================== End Services Area =============================  -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading">Let's Get In Touch!</h2>
+                        <hr class="my-4">
+                        <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center">
+                        <i class="fa fa-phone fa-3x mb-3 sr-contact-1"></i>
+                        <p>863-969-8248</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fa fa-envelope fa-3x mb-3 sr-contact-2"></i>
+                        <p>
+                            <a href="mailto:electronicsmf@aol.com">Electronicsmf@aol.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+</div>
+        @section Scripts {
+            <script src="~/lib/js/gallery.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $.get("/api/home", homelist);
+                })
+
+                function homelist(data) {
+                    var banner = document.getElementById("banner");
+                    for (var i = 0; i < data.length; i++) {
+                        var homebanner = data[i];
+                        banner.innerHTML += `
+                              <div class="container">
+                              <div class="row">
+                                    <div class="col-lg-6 col-md-12 site-title">
+                                        <a class="btn btn-info" href="/home/edit/${homebanner.id}">Edit</a>
+                                        <h1>Hey, I'm ${homebanner.name}.</h1>
+                                        <h2 class="lead">
+                                            ${homebanner.title} from Orlando, Fl.
+                                            ${homebanner.description}.
+                                        </h2>
+                                        <p><a asp-controller="Home" asp-action="About" class="btn btn-primary btn-lg text-uppercase">Learn More About me...</a></p>
+                                        <p><a class="btn btn-primary btn-lg" asp-area="" asp-controller="Portfolio" asp-action="Index">Portfolio &raquo;</a></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 banner-image">
+                                        <img src="/images/about-us.png" alt="About us" class="img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                        `
+                    }
+
+                }
+
+
+
+
+
+
+            </script>
+
+
+        }
