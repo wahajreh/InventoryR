@@ -6,11 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20201101134638_AddTruckModel.cs" />
-    <Compile Remove="Migrations\20201101134638_AddTruckModel.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Remove="wwwroot\lib\js\accordion.js" />
   </ItemGroup>
 

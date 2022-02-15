@@ -10,8 +10,8 @@ using mysite.Data;
 namespace mysite.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201102040938_AddUserPassword")]
-    partial class AddUserPassword
+    [Migration("20220215093144_initialcreate")]
+    partial class initialcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -237,6 +237,39 @@ namespace mysite.Migrations
                     b.ToTable("SubComments");
                 });
 
+            modelBuilder.Entity("mysite.Models.Customer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BillingAddress");
+
+                    b.Property<string>("City");
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<string>("CustomerFirst");
+
+                    b.Property<string>("CustomerLast");
+
+                    b.Property<string>("Email");
+
+                    b.Property<string>("MobilPhone");
+
+                    b.Property<string>("ModelImage");
+
+                    b.Property<string>("PostalCode");
+
+                    b.Property<string>("State");
+
+                    b.Property<string>("WorkOrder");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Customers");
+                });
+
             modelBuilder.Entity("mysite.Models.Home", b =>
                 {
                     b.Property<int>("Id")
@@ -395,6 +428,23 @@ namespace mysite.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Trucks");
+                });
+
+            modelBuilder.Entity("mysite.Models.Warranty", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CompanyName");
+
+                    b.Property<string>("Details");
+
+                    b.Property<string>("PhoneNumber");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Warranties");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

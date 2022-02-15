@@ -19,7 +19,7 @@ namespace mysite.Extensions
             services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+                options.UseSqlServer(@"Server=.\SQLEXPRESS; Database=InventoryR; Trusted_Connection= true; ConnectRetryCount=0");
             });
 
             return services;
